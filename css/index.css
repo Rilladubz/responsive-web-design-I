@@ -179,10 +179,16 @@ header .nav-sec {
 
 header nav {
     /* border: solid black; */
-    display: inline-block;
+
     width: 100%;
+    display: inline-block;
     vertical-align: top;
     margin-top: 35px;
+}
+
+header .nav-sec nav {
+    display: flex;
+    justify-content: space-evenly;
 }
 
 header nav a {
@@ -252,6 +258,7 @@ header .logo {
 }
 
 .main-content {
+    width: 100%;
     border-top: 1px solid black;
     margin-top: 76px;
     padding-top: 39px;
@@ -313,6 +320,10 @@ footer {
 
 @media (max-width: 800px) {
 
+    section .nav-sec {
+        width: 100%;
+    }
+
     .container {
         width: 100%;
     }
@@ -342,19 +353,28 @@ footer {
     }
 
     header nav a {
-        margin-right: 40px;
+        margin-right: 0px;
+    }
+
+
+
+    header nav a:last-child {
+        /* margin-right: 40px; */
     }
 
     .main-content .top-content .text-content {
         width: 48%;
         display: inline-block;
         margin-right: 0px;
+        margin: 0px;
+
     }
 
     .main-content .bottom-content .text-content {
         width: 30%;
         display: inline-block;
-        margin-right: 12px;
+        margin-right: 0px;
+        margin: 0px;
     }
 
 
@@ -439,14 +459,18 @@ footer {
         width: 100%;
         display: inline-block;
         margin-right: 0px;
-        margin-bottom: 10px;
+        margin-bottom: 0px;
     }
 
     .main-content .bottom-content .text-content {
         width: 100%;
         display: inline-block;
-        margin-right: 12px;
-        margin-bottom: 20px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+    }
+
+    .main-content {
+        width: 100%;
     }
 
 
